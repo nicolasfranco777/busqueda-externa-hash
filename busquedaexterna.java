@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
 
-public class ExternalHashWithHashMap {
+public class busquedarexterna {
 
     public static void main(String[] args) throws Exception {
         ExternalHash index = new ExternalHash("buckets", 4); 
