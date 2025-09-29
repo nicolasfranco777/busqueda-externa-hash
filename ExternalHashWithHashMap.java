@@ -5,15 +5,15 @@ import java.util.Map;
 public class ExternalHashWithHashMap {
 
     public static void main(String[] args) throws Exception {
-        ExternalHash index = new ExternalHash("buckets", 4); // 4 buckets
+        ExternalHash index = new ExternalHash("buckets", 4); 
 
-        // Insertamos datos
+        
         int[] keys = {10, 14, 18, 22, 30, 34, 42, 50, 66, 82};
         for (int key : keys) {
             index.insert(key);
         }
 
-        // Consultas
+     
         int[] queries = {10, 11, 42, 50, 99};
         for (int q : queries) {
             System.out.printf("contains(%d) = %s%n", q, index.contains(q));
@@ -29,7 +29,7 @@ class ExternalHash {
         this.folderPath = folderPath;
         this.bucketCount = bucketCount;
 
-        // Crear carpeta si no existe
+        
         File folder = new File(folderPath);
         if (!folder.exists()) folder.mkdir();
     }
