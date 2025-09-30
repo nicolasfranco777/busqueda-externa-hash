@@ -1,7 +1,5 @@
 import java.io.*;
-
 public class ExternalSequentialBlockSearch {
-
     public static void main(String[] args) throws Exception {
         String filePath = "bloques.txt";
         int blockSize = 4;
