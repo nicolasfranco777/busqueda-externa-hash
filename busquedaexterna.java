@@ -3,7 +3,7 @@ import java.io.*;
 public class ExternalSequentialBlockSearch {
 
     public static void main(String[] args) throws Exception {
-        String filePath = "blocks.txt";
+        String filePath = "bloques.txt";
         int blockSize = 4;
 
         int[] data = {10, 14, 18, 22, 30, 34, 42, 50, 66, 82, 90};
